@@ -53,6 +53,7 @@ The common classes across both datasets were selected and merged to build the fi
 <h2>Models Used</h2>
 <img width="800" height="547" alt="Screenshot 2026-09-26 130637" src="https://github.com/user-attachments/assets/8f51b758-ba5a-4024-b6b0-e24356ab4445" />
 <ul>
+  <li><h4>Static Image Processing</h4>ResNet, MobileNet, EfficientNet</li>
   <li><h4>Dynamic Image Processing</h4>ResNet, MobileNet, EfficientNet</li>
   <li><h4>Video Processing</h4>MobileNet, X3D, EfficientNet + LSTM</li>
 </ul>
@@ -78,6 +79,45 @@ Dynamic Image Processing lands closest to Video Processing on accuracy while usi
 
 <h2>Directory Explanatory</h2>
 <h3>Folder Definitions</h3>
+
+<li>
+  <h4><a href="Preprocessing">Preprocessing</a></h4>
+  <p>Contains the shared preprocessing scripts applied to raw video before any of the three methods are run.</p>
+  <ul>
+    <li>
+      <strong><a href="Preprocessing/crop_trim.py">crop_trim.py</a></strong>
+      <br>
+      Trims each raw video clip and crops frames to isolate the relevant region.
+    </li>
+    <li>
+      <strong><a href="Preprocessing/HandLandmarker.py">HandLandmarker.py</a></strong>
+      <br>
+      Applies Google's MediaPipe Hand Landmarker to detect and label hand landmarks on each frame.
+    </li>
+  </ul>
+</li>
+
+<li>
+  <h4><a href="Static Image Processing">Static Image Processing</a></h4>
+  <p>Contains the pipeline for single-frame (static image) classification, used as the baseline comparison.</p>
+  <ul>
+    <li>
+      <strong><a href="Static Image Processing/Source Code">Source Code</a></strong>
+      <ul>
+        <li>
+          <strong><a href="Static Image Processing/Source Code/model_code.py">model_code.py</a></strong>
+          <br>
+          Trains and evaluates the static image classification models (ResNet, MobileNet, EfficientNet).
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong><a href="Static Image Processing/Static Image Results.docx">Static Image Results.docx</a></strong>
+      <br>
+      Experiment results (accuracy, memory usage, processing time) for the static image pipeline.
+    </li>
+  </ul>
+</li>
 
 <li>
   <h4><a href="Dynamic Image Processing">Dynamic Image Processing</a></h4>
@@ -126,11 +166,6 @@ Dynamic Image Processing lands closest to Video Processing on accuracy while usi
       Experiment results (accuracy, memory usage, processing time) for the video-based pipeline.
     </li>
   </ul>
-</li>
-
-<li>
-  <h4><a href="Static Image Processing">Static Image Processing</a></h4>
-  <p><em>Placeholder — not yet added.</em> Will contain the single-frame extraction and classification pipeline used as the baseline comparison.</p>
 </li>
 
 <li>
