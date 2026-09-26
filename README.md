@@ -172,3 +172,10 @@ Dynamic Image Processing lands closest to Video Processing on accuracy while usi
   <h4><a href="Testing Memory and Time Usage">Testing Memory and Time Usage</a></h4>
   <p>Contains the scripts/notebooks used to benchmark memory consumption and processing time across all three methods, producing the Computational Cost comparison above.</p>
 </li>
+
+<h2>Contributors</h2>
+<ul>
+  <li><a href="https://github.com/HypeMob">Johanes Lie</a></li>
+  <li><a href="https://github.com/nekoromancer13/Dynamic-Image-For-Sign-Language-Recognition">Devin Jonathan</a></li>
+  <li><a href="https://github.com/Shearenity">Delvin Hu</a></li>
+</ul>
