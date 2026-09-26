@@ -13,9 +13,16 @@ This repository accompanies the paper <em>"Dynamic Images For Sign Language Reco
 <br>
 <strong>Note:</strong> the paper has been accepted but is not yet publicly published. Some assets (e.g. the manuscript, final dataset files) are therefore not included here yet.
 
+<h2>Project Framework</h2>
+<img width="1415" height="779" alt="Screenshot 2026-09-26 125815" src="https://github.com/user-attachments/assets/ff202a8e-211f-4329-95e6-69d7e92521b2" />
+
+
 <h2>What is a Dynamic Image?</h2>
+<img width="1348" height="780" alt="Screenshot 2026-09-26 130229" src="https://github.com/user-attachments/assets/3324d9e5-3eb3-49ba-91a0-df0df96b3ed7" />
 <br>
 A Dynamic Image is a single-image representation that encodes the temporal ordering of frames in a video using a ranking-based pooling function, rather than a single snapshot in time. It summarizes how motion evolves across a clip into one still image, which can then be processed with standard image-based deep learning models instead of video-based ones.
+
+
 
 <h2>Methods Compared</h2>
 <ul>
@@ -25,6 +32,7 @@ A Dynamic Image is a single-image representation that encodes the temporal order
 </ul>
 
 <h2>Dataset</h2>
+<img width="1346" height="749" alt="Screenshot 2026-09-26 130501" src="https://github.com/user-attachments/assets/7e61fe89-7de4-4b53-9d64-ba48f3914510" />
 <br>
 We combined two publicly available ASL datasets, keeping only the sign classes common to both:
 <ul>
@@ -34,6 +42,7 @@ We combined two publicly available ASL datasets, keeping only the sign classes c
 The common classes across both datasets were selected and merged to build the final dataset used for training and evaluation.
 
 <h2>Preprocessing</h2>
+<img width="1402" height="775" alt="Screenshot 2026-09-26 130552" src="https://github.com/user-attachments/assets/8b960a05-bd73-4502-9998-92034851e294" />
 <ul>
   <li>Trimming and preparing raw video clips</li>
   <li>Frame normalization</li>
@@ -42,12 +51,14 @@ The common classes across both datasets were selected and merged to build the fi
 </ul>
 
 <h2>Models Used</h2>
+<img width="1412" height="763" alt="Screenshot 2026-09-26 130637" src="https://github.com/user-attachments/assets/8f51b758-ba5a-4024-b6b0-e24356ab4445" />
 <ul>
   <li><h4>Dynamic Image Processing</h4>ResNet, MobileNet, EfficientNet</li>
   <li><h4>Video Processing</h4>MobileNet, X3D, EfficientNet + LSTM</li>
 </ul>
 
 <h2>Results Summary</h2>
+<img width="1386" height="626" alt="image" src="https://github.com/user-attachments/assets/46455796-7684-481e-8e96-de5a046546ac" />
 <br>
 <strong>Performance (Accuracy, avg.)</strong>
 <ol>
